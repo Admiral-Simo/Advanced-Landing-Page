@@ -1,17 +1,46 @@
 import React from "react";
-import Button from "./Button";
+import Button from "../Reusable/Button";
 import BenefitCard from "./BenefitCard";
 
 function Benefits() {
   return (
     <main className="grid gap-12 sm:gap-16 md:gap-24 lg:gap-32 px-8 overflow-hidden">
-      <Button />
+      <Button
+        icon={
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            strokeWidth={1.5}
+            stroke="currentColor"
+            className="w-6 h-6"
+          >
+            <path
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              d="M3 16.5v2.25A2.25 2.25 0 005.25 21h13.5A2.25 2.25 0 0021 18.75V16.5M16.5 12L12 16.5m0 0L7.5 12m4.5 4.5V3"
+            />
+          </svg>
+        }
+        text="Download the App"
+      />
       <section className="relative" aria-labelledby="qualities">
+        <img
+          className="hidden lg:block absolute top-1/2 -translate-y-1/2 -left-24 xl:-left-7"
+          src="/assets/dots.svg"
+          alt="dots"
+          aria-hidden="true"
+        />
+        <img
+          className="hidden lg:block absolute top-1/2 -translate-y-1/2 -right-24 xl:-right-7"
+          src="/assets/dots.svg"
+          alt="dots"
+          aria-hidden="true"
+        />
         <h2 id="qualities" className="sr-only">
           Our Qualities
         </h2>
-        <div className="container mx-auto max-w-5xl flex gap-12 flex-wrap items-center justify-center md:justify-between">
-        <div className="grid gap-4 justi">
+        <div className="container mx-auto max-w-5xl flex gap-12 flex-wrap items-center justify-center lg:justify-between">
           <BenefitCard
             icon={
               <svg
@@ -72,7 +101,7 @@ function Benefits() {
             title="Proven"
             text="Leading the Smart Home world for 10 years"
           />
-        </div></div>
+        </div>
       </section>
     </main>
   );

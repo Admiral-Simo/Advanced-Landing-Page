@@ -1,6 +1,8 @@
 import Navbar from "../components/Navbar/Navbar";
 import Header from "../components/Header/Header";
 import Benefits from "../components/Benefits/Benefits";
+import OurPartners from "../components/OurPartners/OurPartners";
+import CtaSection from "../components/CtaSection/CtaSection";
 
 function LandingPage() {
   return (
@@ -8,6 +10,8 @@ function LandingPage() {
       <Navbar />
       <Header />
       <Benefits />
+      <OurPartners />
+      <CtaSection />
     </div>
   );
 }
