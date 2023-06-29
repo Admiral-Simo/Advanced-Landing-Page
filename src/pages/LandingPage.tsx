@@ -3,6 +3,7 @@ import Header from "../components/Header/Header";
 import Benefits from "../components/Benefits/Benefits";
 import OurPartners from "../components/OurPartners/OurPartners";
 import CtaSection from "../components/CtaSection/CtaSection";
+import ContactUs from "../components/ContactUs/ContactUs";
 
 function LandingPage() {
   return (
@@ -12,6 +13,7 @@ function LandingPage() {
       <Benefits />
       <OurPartners />
       <CtaSection />
+      <ContactUs />
     </div>
   );
 }
